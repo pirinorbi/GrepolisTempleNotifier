@@ -8,7 +8,7 @@
 // @match        https://*.grepolis.com/game/*
 // @exclude      view-source://*
 // @exclude      https://classic.grepolis.com/game/*
-// @icon         https://cdn-icons-png.flaticon.com/512/1597/1597852.png 
+// @icon         https://cdn-icons-png.flaticon.com/512/3874/3874511.png
 // @updateURL    https://grepolis-temple-notifier.vercel.app/script.meta.js
 // @downloadURL  https://grepolis-temple-notifier.vercel.app/script.user.js
 // @homepage     https://grepolis-temple-notifier.vercel.app
@@ -85,7 +85,7 @@ function addSettingsButton() {
         var img = document.createElement("div");
         img.style.margin = "6px 0px 0px 5px";
         img.style.background =
-            "url(https://cdn-icons-png.flaticon.com/512/1597/1597852.png) no-repeat 0px 0px";
+            "url(https://cdn-icons-png.flaticon.com/512/3874/3874511.png) no-repeat 0px 0px";
         img.style.width = "22px";
         img.style.height = "22px";
         img.style.backgroundSize = "100%";
