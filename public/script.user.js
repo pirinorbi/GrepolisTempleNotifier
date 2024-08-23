@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Grepolis Temple Notifier
 // @namespace    http://tampermonkey.net/
-// @version      2024.0.2
+// @version      2024.0.3
 // @description  Monitors the incoming support and attacks on temples
 // @author       Jos
 // @match        http://*.grepolis.com/game/*
@@ -145,7 +145,7 @@ async function getTempleMovements() {
                             `Temple **${movement.destination_town_name}** has received support from **${movement.sender_name}** in town **${movement.origin_town_name}**`
                         );
                     }
-                    if (settings.send_attack_message && movement.type === "attack") {
+                    if (settings.send_attack_message && movement.type.includes("attack")) {
                         sendToDiscord(
                             settings.discord_attack_hook,
                             `Temple **${movement.destination_town_name}** has received attack from **${movement.sender_name}** in town **${movement.origin_town_name}**`
