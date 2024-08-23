@@ -19,10 +19,34 @@ export default defineEventHandler<{ body: { movementId: number, templeId: number
 
     const body = await readBody(event)
 
-    if (!body.movementId || !body.templeId || !body.user || !body.town || !body.type) {
+    if (!body.movementId) {
         throw createError({
             statusCode: 400,
-            statusMessage: 'Missing required parameters',
+            statusMessage: 'Missing required parameter: movementId',
+        });
+    }
+    if (!body.templeId) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'Missing required parameter: templeId',
+        });
+    }
+    if (!body.user) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'Missing required parameter: user',
+        });
+    }
+    if (!body.town) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'Missing required parameter: town',
+        });
+    }
+    if (!body.type) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'Missing required parameter: type',
         });
     }
 
