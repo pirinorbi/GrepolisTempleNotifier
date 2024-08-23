@@ -152,7 +152,7 @@ async function getTempleMovements() {
                         );
                     }
                 }).catch((error) => {
-                    console.error(error);
+                    console.warn(error);
                 });
             }
         }

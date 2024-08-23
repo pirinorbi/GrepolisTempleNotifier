@@ -2,8 +2,8 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  vite: {
-    server: {
+  routeRules: {
+    '/api/**': {
         cors: true,
     },
   },
