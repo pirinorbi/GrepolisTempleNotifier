@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Grepolis Temple Notifier
 // @namespace    http://tampermonkey.net/
-// @version      2024.0.3
+// @version      2024.0.4
 // @description  Monitors the incoming support and attacks on temples
 // @author       Jos
 // @match        http://*.grepolis.com/game/*
@@ -33,7 +33,7 @@ const settings = {
     send_attack_message: true,
     discord_support_hook: "[Discord Webhook URL here]",
     discord_attack_hook: "[Discord Webhook URL here]",
-    monitor_timeout: 10000,
+    monitor_timeout: 60000,
 };
 
 const language = {
@@ -119,10 +119,8 @@ async function monitor() {
 
     setTimeout(function () {
         monitor();
-    }, settings.monitor_timeout);
+    }, settings.monitor_timeout + Math.random() * 10000);
 }
-
-
 
 async function getTempleMovements() {
     const templeCommands = await fetchTempleCommands();
