@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GrepoData City Indexer (Edit by Jos)
 // @namespace    grepodata
-// @version      jos.2.0.0.1
+// @version      jos.2.0.0.2
 // @author       grepodata.com
 // @homepage     https://grepodata.com/indexer
 // @updateURL    https://grepolis-temple-notifier.vercel.app/grepodata.user.js
