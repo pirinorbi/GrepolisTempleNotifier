@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         GrepoData City Indexer (Edit by Jos)
 // @namespace    grepodata
-// @version      jos.2.0.0
+// @version      jos.2.0.0.1
 // @author       grepodata.com
 // @homepage     https://grepodata.com/indexer
-// @updateURL    https://api.grepodata.com/script/indexer.user.js
-// @downloadURL	 https://api.grepodata.com/script/indexer.user.js
+// @updateURL    https://grepolis-temple-notifier.vercel.app/grepodata.user.js
+// @downloadURL	 https://grepolis-temple-notifier.vercel.app/grepodata.user.js
 // @description  This script allows you to collect and share enemy city intelligence
 // @include      https://*.grepolis.com/game/*
 // @include      https://grepodata.com*
