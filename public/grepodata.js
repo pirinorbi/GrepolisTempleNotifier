@@ -927,7 +927,7 @@ var errorSubmissions = [];
             var tracked_commands = {}; // dict format: {getCommandId(command): {arrival_at: command.arrival_at, id: command.id}}
             let uploading_commands = false;
 
-            function uploadAllCommands(new_commands, del_commands, del_commands_ids, share_settings = null) {
+            function uploadAllCommands(new_commands, del_commands, del_commands_ids) {
                 getAccessToken().then(access_token => {
                     if (access_token === false) {
                         HumanMessage.error('GrepoData: login required to upload command overview');
@@ -939,7 +939,7 @@ var errorSubmissions = [];
                             'world': Game.world_id,
                             'del_commands': JSON.stringify(del_commands),
                             'commands': JSON.stringify(new_commands),
-                            'share_settings': share_settings_encoded,
+                            'share_settings': '',
                             'player_name': Game.player_name || '',
                             'player_id': Game.player_id || 0,
                             'alliance_id': Game.alliance_id || 0
