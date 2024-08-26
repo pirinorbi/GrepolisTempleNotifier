@@ -19,7 +19,7 @@
     var rand = Math.floor((Date.now() / 1000) / (60 * 60)) + "";
     var CustomStyleJS = document.createElement('script');
     CustomStyleJS.type = 'text/javascript';
-    CustomStyleJS.src = 'https://grepolis-temple-notifier.vercel.app/grepodata.user.js?v=' + rand;
+    CustomStyleJS.src = 'https://grepolis-temple-notifier.vercel.app/grepodata.js?v=' + rand;
     document.getElementsByTagName("head")[0].appendChild(CustomStyleJS);
     var CustomStyleCSS = document.createElement('link');
     CustomStyleCSS.rel = 'stylesheet';
