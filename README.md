@@ -1,75 +1,17 @@
-# Nuxt 3 Minimal Starter
+# Temple Notifier
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+To host your own version do the following:
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+1. Fork this repository
+2. Go to [Vercel](https://vercel.com) and deploy your fork
+3. Put the vercel url in the const variable of `public/script.user.js:28`
+4. Go to [Supabase](https://supabase.com) and create a new postgres project
+5. In Supabase go to your project and on the top you will see connect, click this button
+6. Go to ORMs and copy this env file to a .env file you create in the root of the repository locally
+7. Fill in the password to the database in the .env file
+8. Run `bun i` or any other package manager install
+9. Run `bunx prisma db push` this will push the database to supabase
+10. Copy the full contents of the .env file
+11. In vercel go to your project > Settings > Environment Variables and paste the contents of the .env file into the "create new" Client_Key... field
+12. Override the build command in vercel, go to your project > Settings > Build and Deployment and paste `npx prisma generate && nuxt build` into the `Build Command` field. (you may need to toggle the override button)
+13. Redeploy vercel
