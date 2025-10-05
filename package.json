@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "@prisma/nuxt": "latest",
-    "nuxt": "^3.12.4",
+    "nuxt": "^3.19.2",
     "vue": "latest"
   },
   "devDependencies": {
     "@prisma/client": "5.19.1",
-    "prisma": "5.19.1"
+    "@tailwindcss/vite": "^4.1.14",
+    "prisma": "5.19.1",
+    "tailwindcss": "^4.1.14"
   }
 }
