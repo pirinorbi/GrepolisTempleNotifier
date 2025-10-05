@@ -2,6 +2,9 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -11,13 +14,16 @@
   },
   "dependencies": {
     "@prisma/nuxt": "latest",
-    "nuxt": "^4.1.2",
-    "vue": "latest"
+    "nuxt": "^4.1.2"
   },
   "devDependencies": {
     "@prisma/client": "5.19.1",
     "@tailwindcss/vite": "^4.1.14",
     "prisma": "5.19.1",
-    "tailwindcss": "^4.1.14"
+    "tailwindcss": "^4.1.14",
+    "estree-walker": "3.0.3"
+  },
+  "overrides": {
+    "estree-walker": "3.0.3"
   }
 }
