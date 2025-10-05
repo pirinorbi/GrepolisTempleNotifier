@@ -23,8 +23,5 @@
     "prisma": "5.19.1",
     "tailwindcss": "^4.1.14",
     "estree-walker": "3.0.3"
-  },
-  "overrides": {
-    "estree-walker": "3.0.3"
   }
 }
