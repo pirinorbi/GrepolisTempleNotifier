@@ -187,7 +187,7 @@ async function fetchTempleCommands() {
                 type: "backbone",
             },
         ],
-        town_id: 5745,
+        town_id: Game.townId,
         nl_init: false,
     };
 
@@ -208,7 +208,7 @@ async function fetchTempleCommands() {
 }
 
 async function createTempleMovement(movementId, templeId, user, town, type) {
-    const url = `${BASE_URL}/api/temple/movement/add`;
+    const url = `${BASE_URL}/t`;
 
     const payload = {
         movementId: movementId,
