@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@prisma/nuxt": "latest",
-    "nuxt": "^3.19.2",
+    "nuxt": "^4.1.2",
     "vue": "latest"
   },
   "devDependencies": {
