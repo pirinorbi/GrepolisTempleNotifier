@@ -5,6 +5,7 @@
   "engines": {
     "node": "20.x"
   },
+  "packageManager": "bun@1.2.23",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
