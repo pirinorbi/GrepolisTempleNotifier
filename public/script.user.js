@@ -25,7 +25,7 @@
 var uw = unsafeWindow || window;
 var $ = uw.jQuery;
 
-const BASE_URL = "https://grepolis-temple-notifier-lyart.vercel.app";
+const BASE_URL = "https://vercel.com/pirinorbis-projects/grepolis-temple-notifier-pb2m";
 
 // ======================================
 const settings = {
